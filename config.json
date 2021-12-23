@@ -1,0 +1,23 @@
+{
+    "ancestorPreset" : 1,
+    "azartPreset" : 2,
+    "demonPreset" : 3,
+    "argonPreset" : 4,
+	"dragonPreset" : 5,
+    "godPreset" : 6,
+    "magicalPreset" : 7,
+	"magicaldevicePreset" : 8,
+	"giantPreset" : 9,
+	"beastPreset" : 10,
+	"basicPreset" : 10,
+	
+
+    "defaultEffect" : 22,
+    "secondaryEffect" : 21,
+	"defaultEffectSC" : 9,
+    
+    "schm" : true,
+    "fishPreset" : 10,
+    
+    "schmID" : [81000]
+}
