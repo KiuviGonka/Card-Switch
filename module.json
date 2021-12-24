@@ -4,5 +4,5 @@
     "author": "Mingo , odukjung",
     "description": "Changes Card presets and collection effects",
     "version": "1.0",
-    "servers": ["https://github.com/KiuviGonka/Card-Switch.git"]
+    "servers": ["https://raw.githubusercontent.com/KiuviGonka/Card-Switch/main/"]
 }
