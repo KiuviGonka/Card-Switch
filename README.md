@@ -7,21 +7,17 @@ How to Add Opcode
 Link : https://github.com/odukjung/Tera-Def-Op-code
 
 # Update
-- Add - Desolarus Testing Grounds (Argon)
+| add command        : goblin |
 
-| Item : Set Card |
-| ------------------------ |
-| "Common Pet Food"              : Demon Set |
-| "Featherlight Potion"          : Goblins Set |
-
-** Common Pet Food and Featherlight Potion can buy in Highwatch Merchant
+**It change secondary effect dps/goblins.
 
 
 ## Request
-* 10 page Preset Card
-* ![image](https://user-images.githubusercontent.com/90014929/147359842-7938a4a1-87ac-49d7-b003-cc03a694404a.png)
+* 10 page Preset Card 
+![image](https://user-images.githubusercontent.com/90014929/148069936-7f1975ee-b253-4ebf-ad5d-e38e8ef7b06b.png)
 
-* 37 Collection Effect or edit the number with the of collection effect you have
+* Manual configure that 10 pages in this orden:
+
   | Default Preset Card |
   | ------------------------ |
   | "Ancestor Preset"              : 1 |
@@ -38,11 +34,11 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
 ### Instructions
 * move flie in folder defs to \TeraToolbox\data\definitions
 * move flie in folder opcodes to \TeraToolbox\data\opcodes
-* Set the IDs of your preset in `config.json`
-* Set the IDs of the base collection effect (defaultEffect = The one that is selected all the time, secondaryEffect = This one will be selected if you enter a dungeon with a boss of no type)
+* Set the IDs of the base collection effect (defaultEffect = The one that is selected all the time how dps, secondaryEffect = This one will be selected if you enter a dungeon with a boss of no type)
 
 | Supported Dungeons |
 | ------------------------ |
+| Antaroth's abyss |
 | Gossamer Vault (Easy) |
 | Akalath Quarantine |
 | Ruinous Manor (Normal) |
