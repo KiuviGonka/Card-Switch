@@ -23,7 +23,7 @@ module.exports = function CardPresets(mod) {
 				if (zoneId == 9713||zoneId ==9126) 
 					{
 						losnn('basic')
-						mod.command.message('<font color="#fff317">Card set mode</font> - <font color="#fff317">None Type</font>');
+						mod.command.message('<font color="#fff317">Card set mode</font> - <font color="#fff317">None Type - ${mode ? "Dps" : "goblin"}</font> ');
 						return true;
 					}
 			
@@ -31,7 +31,7 @@ module.exports = function CardPresets(mod) {
 				else if (zoneId == 3023|| zoneId == 3108||zoneId == 3107||zoneId == 3026||zoneId == 3126) 
 					{
 						losnn('argon');
-						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Argon</font>');
+						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Argon - ${mode ? "Dps" : "goblin"} </font>');
 						return true;
 					}
 					
@@ -39,7 +39,7 @@ module.exports = function CardPresets(mod) {
 				else if (zoneId == 3036||zoneId ==3041||zoneId ==3044) 
 					{
 						losnn('demon')
-						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Demon</font>');
+						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Demon - ${mode ? "Dps" : "goblin"}</font>');
 						return true;
 					}
 					
@@ -47,7 +47,7 @@ module.exports = function CardPresets(mod) {
 				else if (zoneId == 9070) 
 					{
 						losnn('giant')
-						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Giant</font>');
+						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Giant - ${mode ? "Dps" : "goblin"}</font>');
 						return true;
 					}
 					
@@ -55,7 +55,7 @@ module.exports = function CardPresets(mod) {
 				else if (zoneId == 3106||zoneId == 3206||zoneId == 3042||zoneId == 3103||zoneId == 3203) 
 					{
 						losnn('ancestor')
-						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Ancestor</font>');
+						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Ancestor - ${mode ? "Dps" : "goblin"}</font>');
 						return true;
 					}
 			
@@ -64,7 +64,7 @@ module.exports = function CardPresets(mod) {
 				||zoneId == 3040) 
 					{
 						losnn('azart')
-						mod.command.message('<font color="#fff317">Card Set mode</font> - <font color="#fff317">Azart</font>');
+						mod.command.message('<font color="#fff317">Card Set mode</font> - <font color="#fff317">Azart - ${mode ? "Dps" : "goblin"}</font>');
 						return true;
 					}
 			
@@ -72,7 +72,7 @@ module.exports = function CardPresets(mod) {
 				if(zoneId == 9044) 
 					{
 						losnn('god')
-						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">God</font>');
+						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">God - ${mode ? "Dps" : "goblin"}</font>');
 						return true;
 					}
 					
@@ -81,7 +81,7 @@ module.exports = function CardPresets(mod) {
 				if(zoneId == 3034) 
 					{
 						losnn('device')
-						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Magical Device</font>');
+						mod.command.message('<font color="#fff317">Card set mode </font> - <font color="#fff317">Magical Device - ${mode ? "Dps" : "goblin"}</font>');
 						return true;
 					}
 					
