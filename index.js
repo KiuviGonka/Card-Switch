@@ -64,7 +64,7 @@ module.exports = function CardPresets(mod) {
 				||zoneId == 3040) 
 					{
 						losnn('azart')
-						mod.command.message('<font color="#fff317">Card Set mode</font> - <font color="#fff317">Azart -</font> ${mode ? "Dps" : "goblin"}');
+						command.message('<font color="#fff317">Card Set mode</font> - <font color="#fff317">Azart -</font> ${mode ? "Dps" : "goblin"}');
 						return true;
 					}
 			
