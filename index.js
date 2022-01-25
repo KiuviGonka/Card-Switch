@@ -7,16 +7,31 @@ module.exports = function CardPresets(mod) {
 	let mode = true,
 		n1,
 		n2;
-	command.add('goblin', {
+	command.add('dpsCard', {
         $none() {
-            mode = !mode;
+            mode = true;
 			setPresetAndEffects(n1, n2);
-			command.message(`Card mode is now: ${mode ? "Dps" : "goblin"}.`);
+			command.message(`Card mode is now: ${mode ? "Dps" : "goblin"}.`);*/
 		}
 		});
+	function modeChange(){
+		mode = !mode;
+		setPresetAndEffects(n1, n2);
+		command.message(`Swap to: ${mode ? "Dps" : "goblin"}.`);
+	}
+	mod.hook('S_USER_DEATH', 1, event => {
+		if(event.name === mod.game.me.name){
+			mod.setTimeout(modeChange, 100);
+		}
+			
+	});
+	mod.hook('C_REVIVE_NOW', 2, event => {
+			mod.setTimeout(modeChange, 1000);
+	});
 
     mod.hook('S_LOAD_TOPO', 3, (event) => 
 		{
+			mode = true,
 			zoneId = event.zone;
 		
 			// No type
