@@ -11,7 +11,7 @@ module.exports = function CardPresets(mod) {
         $none() {
             mode = true;
 			setPresetAndEffects(n1, n2);
-			command.message(`Card mode is now: ${mode ? "Dps" : "goblin"}.`);*/
+			command.message(`Card mode is now: ${mode ? "Dps" : "goblin"}.`);
 		}
 		});
 	function modeChange(){
