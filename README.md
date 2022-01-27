@@ -2,7 +2,10 @@
 
 * Changes card presets and collection effect when entering a dungeon
 
-# Opcode for your region
+# Opcode for your region (work in NA/EU servers)
+
+In case you want to use the mod in another region disable the update and replace in the index.js file with the opcodes for your region () lines 6-9
+
 How to Add Opcode
 Link : https://github.com/odukjung/Tera-Def-Op-code
 
