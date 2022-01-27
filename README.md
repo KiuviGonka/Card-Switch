@@ -7,7 +7,9 @@
 In case you want to use the mod in another region disable the update and replace in the index.js file with the opcodes for your region () lines 6-9
 
 How to Add Opcode
-Link : https://github.com/odukjung/Tera-Def-Op-code
+I recommend this tool. They can start with a type letter: /8 fpi a. and then manually change the cards and effects and in this way the possible opcodes that are needed will appear on the screen.
+
+Link : https://github.com/Owyn/alex-packet-id-finder
 
 # Update
 * When you die the mod auto cast goblin effect, but when u get rest u will be in dps set again!.
