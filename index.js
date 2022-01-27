@@ -3,6 +3,15 @@ let zoneId;
 
 
 module.exports = function CardPresets(mod) {
+	
+	mod.dispatch.addOpcode("C_ACTIVATE_CARD_COMBINE_LIST", 20244);
+	mod.dispatch.addOpcode("C_DEACTIVATE_CARD_COMBINE_LIST", 41081);
+	mod.dispatch.addOpcode("C_CHANGE_CARD_PRESET", 37750);
+	mod.dispatch.addDefinition("C_ACTIVATE_CARD_COMBINE_LIST", 1, [["id", "uint32"]]);
+	mod.dispatch.addDefinition("C_DEACTIVATE_CARD_COMBINE_LIST", 1, [["id", "uint32"]]);
+	mod.dispatch.addDefinition("C_CHANGE_CARD_PRESET", 1, [["preset", "uint32"]]);
+
+	
 	const command = mod.command;
 	let mode = true,
 		n1,
