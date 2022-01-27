@@ -7,7 +7,10 @@ How to Add Opcode
 Link : https://github.com/odukjung/Tera-Def-Op-code
 
 # Update
-| add command        : goblin |
+* When you die the mod auto cast goblin effect, but when u get rest u will be in dps set again!.
+* Just in case of bug u can type:
+
+  | dpsCard |
 
 **It change secondary effect dps/goblins.
 
