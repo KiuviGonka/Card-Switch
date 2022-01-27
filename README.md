@@ -12,7 +12,7 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
 
   | dpsCard |
 
-**It change secondary effect dps/goblins.
+**It change secondary effect to dps
 
 
 ## Request
@@ -34,10 +34,8 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
   | "Giant Preset"                 : 9 |
   | "Basic Preset" or "Beast Preset" : 10 |
 
-### Instructions
-* move flie in folder defs to \TeraToolbox\data\definitions
-* move flie in folder opcodes to \TeraToolbox\data\opcodes
-* Set the IDs of the base collection effect (defaultEffect = The one that is selected all the time how dps, secondaryEffect = This one will be selected if you enter a dungeon with a boss of no type)
+
+
 
 | Supported Dungeons |
 | ------------------------ |
