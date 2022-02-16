@@ -4,9 +4,9 @@ let zoneId;
 
 module.exports = function CardPresets(mod) {
 	
-	mod.dispatch.addOpcode("C_ACTIVATE_CARD_COMBINE_LIST", 20244);
-	mod.dispatch.addOpcode("C_DEACTIVATE_CARD_COMBINE_LIST", 41081);
-	mod.dispatch.addOpcode("C_CHANGE_CARD_PRESET", 37750);
+	mod.dispatch.addOpcode("C_ACTIVATE_CARD_COMBINE_LIST", 28905);
+	mod.dispatch.addOpcode("C_DEACTIVATE_CARD_COMBINE_LIST", 65450);
+	mod.dispatch.addOpcode("C_CHANGE_CARD_PRESET", 50270);
 	mod.dispatch.addDefinition("C_ACTIVATE_CARD_COMBINE_LIST", 1, [["id", "uint32"]]);
 	mod.dispatch.addDefinition("C_DEACTIVATE_CARD_COMBINE_LIST", 1, [["id", "uint32"]]);
 	mod.dispatch.addDefinition("C_CHANGE_CARD_PRESET", 1, [["preset", "uint32"]]);
@@ -44,7 +44,7 @@ module.exports = function CardPresets(mod) {
 		{
 			mode = true,
 			zoneId = event.zone;
-		
+			//mod.command.message(`zona ${zoneId}`);
 			// No type
 				if (zoneId == 9713||zoneId ==9126) 
 					{
@@ -78,7 +78,7 @@ module.exports = function CardPresets(mod) {
 					}
 					
 		    // Ancestor set
-				else if (zoneId == 3106||zoneId == 3206||zoneId == 3042||zoneId == 3103||zoneId == 3203) 
+				else if (zoneId == 3106||zoneId == 3206||zoneId == 3042||zoneId == 3103||zoneId == 3203||zoneId == 3027) 
 					{
 						losnn('ancestor')
 						mod.command.message(`<font color="#fff317">Card set mode</font> - <font color="#fff317">Ancestor -  ${mode ? "Dps" : "goblin"}</font>`);
@@ -115,6 +115,7 @@ module.exports = function CardPresets(mod) {
 		mod.hook('S_SPAWN_NPC', 12, (event) => 
 			
 		{	
+			//mod.command.message(`subzona ${event.huntingZoneId} y caso ${event.templateId}`);
 				//Frost Reach
 				if(zoneId == 7012) 
 					{
@@ -362,6 +363,32 @@ module.exports = function CardPresets(mod) {
 										case 2000: //LB-1
 											losnn('device')
 											mod.command.message('<font color="#fff317">LB-1</font> - <font color="#fff317">Magical Device</font>');
+											return true;
+									}
+							}
+					}
+				//TR
+				if(zoneId == 9794) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Commander Residence
+								case 794: 
+									
+									switch (event.templateId) 
+									{
+										case 1000: 
+											losnn('beast')
+											mod.command.message('<font color="#fff317">Birchback</font> - <font color="#fff317">beast</font>');
+											return true;
+										
+										case 2000: 
+											losnn('magical')
+											mod.command.message('<font color="#fff317">Lehnym</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+										case 3000: 
+											losnn('magical')
+											mod.command.message('<font color="#fff317">Garuksalk</font> - <font color="#fff317">Magical Creature</font>');
 											return true;
 									}
 							}
