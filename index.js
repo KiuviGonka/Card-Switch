@@ -62,7 +62,7 @@ module.exports = function CardPresets(mod) {
 					}
 					
 			// Demon set
-				else if (zoneId == 3036||zoneId ==3041||zoneId ==3044) 
+				else if (zoneId == 3036||zoneId ==3041||zoneId ==3044||zoneId ==3043) 
 					{
 						losnn('demon')
 						mod.command.message(`<font color="#fff317">Card set mode</font> - <font color="#fff317">Demon -  ${mode ? "Dps" : "goblin"}</font>`);
@@ -115,7 +115,7 @@ module.exports = function CardPresets(mod) {
 		mod.hook('S_SPAWN_NPC', 12, (event) => 
 			
 		{	
-			//mod.command.message(`subzona ${event.huntingZoneId} y caso ${event.templateId}`);
+			mod.command.message(`subzona ${event.huntingZoneId} y caso ${event.templateId}`);
 				//Frost Reach
 				if(zoneId == 7012) 
 					{
@@ -389,6 +389,32 @@ module.exports = function CardPresets(mod) {
 										case 3000: 
 											losnn('magical')
 											mod.command.message('<font color="#fff317">Garuksalk</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+									}
+							}
+					}
+					
+					//Sshm
+				if(zoneId == 9068) 
+					{
+						switch (event.huntingZoneId)
+							{
+								case 468: 
+									
+									switch (event.templateId) 
+									{
+										case 1000: 
+											losnn('magical')
+											mod.command.message('<font color="#fff317">Nightmare Pahoegar</font> - <font color="#fff317">Magical creature</font>');
+											return true;
+										
+										case 2000: 
+											losnn('basic')
+											mod.command.message('<font color="#fff317">--??--</font> - <font color="#fff317">No type ??</font>');
+											return true;
+										case 3000: 
+											losnn('basic')
+											mod.command.message('<font color="#fff317">--??--</font> - <font color="#fff317">No type ??</font>');
 											return true;
 									}
 							}
