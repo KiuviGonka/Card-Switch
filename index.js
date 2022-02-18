@@ -115,7 +115,7 @@ module.exports = function CardPresets(mod) {
 		mod.hook('S_SPAWN_NPC', 12, (event) => 
 			
 		{	
-			mod.command.message(`subzona ${event.huntingZoneId} y caso ${event.templateId}`);
+			//mod.command.message(`subzona ${event.huntingZoneId} y caso ${event.templateId}`);
 				//Frost Reach
 				if(zoneId == 7012) 
 					{
